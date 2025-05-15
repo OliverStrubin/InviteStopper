@@ -52,7 +52,7 @@ class Client(commands.Bot):
 
         activity = discord.Activity(
             type=discord.ActivityType.watching,
-            name=f"{len(self.guilds)} servers"
+            name=f"servers"
         )
         await self.change_presence(activity=activity, status=discord.Status.do_not_disturb)
 
