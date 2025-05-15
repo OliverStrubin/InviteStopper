@@ -120,4 +120,4 @@ async def on_app_command_error(interaction: discord.Interaction, error: app_comm
         )
         raise error
 
-client.run("BOT_TOKEN")
+client.run(os.getenv("BOT_TOKEN"))
