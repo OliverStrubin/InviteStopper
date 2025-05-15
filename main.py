@@ -5,7 +5,8 @@ import datetime
 import json
 import os
 
-PAUSE_FILE = "invite_pause_guilds.json"
+PAUSE_FILE = "data/invite_pause_guilds.json"
+os.makedirs("data", exist_ok=True)
 
 def load_paused_guilds():
     if os.path.exists(PAUSE_FILE):
